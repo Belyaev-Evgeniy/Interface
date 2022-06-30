@@ -1,7 +1,11 @@
-public class SchoolTeacherWorker implements ITeacherWorker{
-    private String lessonName = "ИВТ";
+public class SchoolTeacherWorker implements ITeacherWorker {
+    private String lessonName;
 
-    void speakWithOtherTeachers(){
+    public SchoolTeacherWorker(String lessonName) {
+        this.lessonName = lessonName;
+    }
+
+    void speakWithOtherTeachers() {
         System.out.println("Отсутствует пол урока");
     }
 
@@ -11,10 +15,8 @@ public class SchoolTeacherWorker implements ITeacherWorker{
     }
 
     @Override
-    public void teach() {
+    public void teach(Student Ivan) {
         speakWithOtherTeachers();
-        Student.learn(lessonName);
+        Ivan.learn(lessonName);
     }
-
-
 }

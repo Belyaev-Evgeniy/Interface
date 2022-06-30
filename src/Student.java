@@ -2,12 +2,12 @@ public class Student {
 
    private String knowledge;
 
-
-    public Student() {
-        String boy = "Ivan";
+    public Student(String knowledge) {
+        this.knowledge = knowledge;
     }
 
-    static void learn(String knowledge){
+
+    void learn(String knowledge){
         System.out.println("Учит " + knowledge);
     }
 }

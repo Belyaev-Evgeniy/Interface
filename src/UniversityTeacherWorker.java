@@ -20,8 +20,8 @@ public class UniversityTeacherWorker implements ITeacherWorker{
     }
 
     @Override
-    public void teach() {
+    public void teach(Student Ivan) {
         speakAboutPutin();
-        Student.learn(courseName);
+        Ivan.learn(courseName);
     }
 }

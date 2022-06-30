@@ -1,5 +1,5 @@
 public interface ITeacherWorker {
     void prepareLesson();
-    void teach();
+    void teach(Student Ivan);
 
 }

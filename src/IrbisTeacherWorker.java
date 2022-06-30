@@ -20,7 +20,7 @@ public class IrbisTeacherWorker implements ITeacherWorker{
     }
 
     @Override
-    public void teach() {
-        Student.learn(courseName);
+    public void teach(Student Ivan) {
+        Ivan.learn(courseName);
     }
 }
